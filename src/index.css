@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html, #root {
+  height: 100%;
 }
+  body {
+      background-color: rgb(89, 247, 255);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      height: 100%;
+  }
+  form{
+    width: 100%;
+  }
+  .container {
+      max-width: 300px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      gap: 40px;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  }
+  .input-field {
+      padding: 10px;
+      font-size: 16px;
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-radius: 0px;
+      border-bottom: 1px solid white;
+      width: -webkit-fill-available;
+
+  }
+  .input-field::placeholder {
+      color: white;
+  }
+  .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-radius: 0px;
+      color: rgb(0, 255, 72);
+      width: 100%;
+      background-color: violet;
+  }
+  .btn:hover {
+      background-color: #218838;
+  }
+  .event-image {
+      width: 100%;
+      margin-bottom: 20px;
+      width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transform: scale(1);
+  }
+
+    .icon{
+      width: 32px;
+      height: 32px;
+    }
